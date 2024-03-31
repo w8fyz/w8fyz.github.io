@@ -2,23 +2,73 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Thibeau Benet</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="css/animations.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
+    <link href="css/navbar.css" rel="stylesheet">
+    <link href="css/start-section.css" rel="stylesheet">
 </head>
 <body>
+
+<!--
+Salut! Si le code présent ici t'intéresse n'hésite pas à fouiller, j'ai essayé de ranger le tout le plus correctement
+possible, et si tu aimes mon travail n'hésite pas à me suivre sur github!
+Tu peux aussi me contacter sur mes réseaux présent là bas si tu as la moindre question.
+
+https://github.com/w8fyz
+
+
+-CreateCreateCreate(from)Thibeau-
+
+Licence: https://fr.wikipedia.org/wiki/Licence_MIT
+-->
+
 <div id="container">
+    <div id="nav-bar"><!-- TODO: -fill when selected-->
+        <ul>
+            <a href="#main">
+                <li> <i class="bi bi-house"></i></li>
+            </a>
+
+            <a href="#about-me">
+                <li><i class="bi bi-file-earmark-text"></i> </li>
+            </a>
+
+            <a href="#projects">
+            <li class="active-nav-item">
+                <i class="bi bi-palette"></i>
+            </li>
+            </a>
+        </ul>
+    </div>
     <section id="main">
         <div class="main-title">
             <div class="main-title-text">
                 <span>Salut !</span>
-                <img class="main-title-text-image" src="assets/img/main_title_hand_emoji.png">
-                <p>Moi c'est Thibeau</p>
+                <img id="main-title-animated-hand" class="main-title-text-image" src="assets/img/main_title_hand_emoji.png">
+                <div class="contained-text">
+                    <p>Moi c'est</p>
+                    <p class="second-contained-text">Thibeau</p>
+                </div>
+
             </div>
             <div class="main-title-profile">
                 <img class="main-title-profile-image" src="assets/img/main_title_profile_image.png">
             </div>
         </div>
     </section>
+    <section id="about-me" class="section-alternative-bg">
+        <div class="section-title">
+            <h1>A propos de moi</h1>
+            <h2>Quelques informations sur moi</h2>
+        </div>
+
+    </section>
 </div>
+
+<script src="js/load-animation.js"></script>
+<script src="js/navbar-selection.js"></script>
 </body>
 </html>

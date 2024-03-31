@@ -1,0 +1,1 @@
+document.getElementById('main-title-animated-hand').style.animation="animation: wave 2.5s;";

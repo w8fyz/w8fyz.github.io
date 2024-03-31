@@ -1,0 +1,69 @@
+.main-title {
+    height: 100vh   ;
+    flex-wrap: wrap-reverse;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    user-select: none;
+    width: 100vw;
+}
+
+.main-title:active {
+    pointer-events: none;
+}
+
+.main-title-text {
+    font-size: 40px;
+    color: white;
+    font-weight: 500;
+    margin-right: 30px;
+}
+
+@media screen and (max-width: 630px) {
+    .main-title {
+        margin-top: 20px;
+        height: auto;
+        text-align: center;
+    }
+    .main-title-text {
+        margin-right: 0;
+    }
+}
+
+.main-title-text p {
+    margin-top: 0;
+}
+
+.main-title-text span {
+    font-size: 55px;
+}
+
+.main-title-text .contained-text {
+    display: flex;
+    margin: 0;
+}
+
+.main-title-text .contained-text .second-contained-text {
+    margin-left: 11px;
+    color: white;
+    transition: color 0.2s;
+}
+
+.main-title-text .contained-text .second-contained-text:hover {
+    margin-left: 11px;
+    color: #cbb102;
+    transition: color 0.2s;
+}
+
+.main-title-text-image {
+    width: 50px;
+}
+
+
+.main-title-text-image:hover {
+    animation: wave 2.5s;
+}
+
+.main-title-profile-image {
+    width: 300px;
+}
