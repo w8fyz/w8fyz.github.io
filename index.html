@@ -9,6 +9,8 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/navbar.css" rel="stylesheet">
     <link href="css/start-section.css" rel="stylesheet">
+    <link href="css/aboutme-section.css" rel="stylesheet">
+    <link href="css/font-roller.css" rel="stylesheet">
 </head>
 <body>
 
@@ -19,6 +21,10 @@ Tu peux aussi me contacter sur mes réseaux présent là bas si tu as la moindre
 
 https://github.com/w8fyz
 
+Sources:
+- https://codepen.io/g0man/pen/vYPLRyP (Waves effect)
+- https://icons.getbootstrap.com/ (Icons)
+- Me (everything else)
 
 -CreateCreateCreate(from)Thibeau-
 
@@ -26,28 +32,33 @@ Licence: https://fr.wikipedia.org/wiki/Licence_MIT
 -->
 
 <div id="container">
+    <div id="nav-bar-container">
     <div id="nav-bar"><!-- TODO: -fill when selected-->
         <div id="nav-overlay"></div>
         <ul>
-            <a href="#main">
+            <a href="#main" data-name="Accueil">
                 <li> <i class="bi bi-house"></i></li>
             </a>
 
-            <a href="#about-me">
+            <a href="#about-me" data-name="A propos de moi">
                 <li><i class="bi bi-file-earmark-text"></i> </li>
             </a>
 
-            <a href="#projects">
+            <a href="#projects" data-name="Mes Projets">
             <li>
                 <i class="bi bi-palette"></i>
             </li>
             </a>
         </ul>
     </div>
+    <div id="mobile-nav-bar">
+        <button onclick="toggleMobileNavBar()"><i class="bi bi-list"></i></button>
+    </div>
+    </div>
     <section id="main">
         <div class="main-title">
             <div class="main-title-text">
-                <span>Salut !</span>
+                <span class="font-rolling">Salut !</span>
                 <img id="main-title-animated-hand" class="main-title-text-image" src="assets/img/main_title_hand_emoji.png">
                 <div class="contained-text">
                     <p>Moi c'est</p>
@@ -62,9 +73,12 @@ Licence: https://fr.wikipedia.org/wiki/Licence_MIT
     </section>
     <section id="about-me" class="section-alternative-bg">
         <div class="section-title">
-            <h1>A propos de moi</h1>
-            <h2>Quelques informations sur moi</h2>
+            <h1>- A propos de moi -</h1>
+            <h2>Mais qui suis-je ? 🤔</h2>
         </div>
+
+    </section>
+    <section id="projects">
 
     </section>
 </div>
@@ -72,5 +86,6 @@ Licence: https://fr.wikipedia.org/wiki/Licence_MIT
 <script src="js/load-animation.js"></script>
 <script src="js/navbar-selection.js"></script>
 <script src="js/utils.js"></script>
+<script src="js/font-roll.js"></script>
 </body>
 </html>

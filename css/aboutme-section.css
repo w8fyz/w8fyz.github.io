@@ -2,4 +2,15 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+#about-me .section-title h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+#about-me .section-title h2 {
+    margin: 0;
 }

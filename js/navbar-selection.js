@@ -2,16 +2,38 @@ const overlay = document.getElementById("nav-overlay");
 
 document.addEventListener("scroll", () => {
     if(window.scrollY > 0) {
-        document.getElementById("nav-bar").classList.add("reduced-opacity")
+        document.getElementById("nav-bar-container").classList.add("reduced-opacity")
     } else {
-        document.getElementById("nav-bar").classList.remove("reduced-opacity")
+        document.getElementById("nav-bar-container").classList.remove("reduced-opacity")
     }
     checkUpdateNavBar();
 })
 
 document.addEventListener("DOMContentLoaded", () => {
+    if(window.innerWidth <= 890) {
+        document.getElementById("mobile-nav-bar").firstElementChild.click();
+    }
     checkUpdateNavBar();
 })
+
+window.addEventListener("resize", () => {
+    checkUpdateNavBar();
+})
+
+function toggleMobileNavBar() {
+    let navbar = document.getElementById("nav-bar");
+    let mobile_nav_btn = document.getElementById("mobile-nav-bar");
+    if(navbar.classList.contains("hidden-navbar")) {
+        navbar.classList.remove("hidden-navbar");
+        mobile_nav_btn.classList.add("nav-toggle-on");
+        navbar.style.top = "";
+    } else {
+        navbar.classList.add("hidden-navbar");
+        navbar.style.top = mobile_nav_btn.getBoundingClientRect().y+"px";
+        mobile_nav_btn.classList.remove("nav-toggle-on");
+    }
+    checkUpdateNavBar();
+}
 
 
 function checkUpdateNavBar() {

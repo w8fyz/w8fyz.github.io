@@ -15,8 +15,56 @@
     transition: opacity 0.2s;
 }
 
+#mobile-nav-bar button {
+    background-color: #f5f6fa;
+    font-size: 40px;
+    color: #353b48;
+    padding: 15px;
+    cursor: pointer;
+    border-radius: 30px;
+    -webkit-box-shadow: 0 0 5px 2px rgba(0,0,0,0.3);
+    box-shadow: 0 0 5px 2px rgba(0,0,0,0.3);
+    transition: background-color ease 0.2s;
+}
+
+#mobile-nav-bar.nav-toggle-on button {
+    background-color: #c99d1d;
+    content: "caca";
+    color: #f5f6fa;
+    transition: background-color,color ease 0.2s;
+}
+
+#mobile-nav-bar {
+    display: none;
+}
+
+@media screen and (max-width: 890px) {
+    #mobile-nav-bar {
+        position: fixed;
+        display: block;
+        bottom: 0;
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+    #nav-bar {
+        margin-left: 10px;
+        top: 60vh;
+    }
+}
+
+@media screen and (max-height: 840px) {
+    #nav-bar {
+        top: 50vh !important;
+    }
+}
+
 #nav-bar:hover {
     opacity: 1;
+}
+
+.hidden-navbar {
+    opacity: 0;
+    transition: opacity 0.2s;
 }
 
 .reduced-opacity {
@@ -58,7 +106,7 @@
 }
 
 #nav-overlay {
-    z-index: -2;
+    z-index: -1;
     position: fixed;
     background-color: #E1B12C;
     border-radius: 30px;
