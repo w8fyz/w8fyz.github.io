@@ -1,3 +1,9 @@
+#projects {
+    min-height: 98vh;
+    height: fit-content;
+    margin-bottom: 2vh;
+}
+
 #projects .section-title {
     display: flex;
     justify-content: center;
@@ -20,4 +26,60 @@
 #projects .section-title h2:hover {
     opacity: 1;
     transition: opacity 0.2s;
+}
+
+#projects-container {
+    margin-top:30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#projects-container .project {
+    margin: 20px;
+    padding: 25px;
+    background-color: #2A2F38;
+    width: 350px;
+    height: 500px;
+    border-radius: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#projects-container .project:hover {
+    -webkit-box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.15);
+    box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#projects-container .project img {
+    width: 350px;
+    border-radius: 23px;
+}
+
+#projects-container .project h2 {
+    color: #f5f6fa;
+    font-size: 24px;
+}
+
+#projects-container .project p {
+    color: white;
+    font-size: 20px;
+    opacity: 0.7;
+}
+
+#projects-container .project a {
+    text-decoration: none;
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    background-color: #E1B12C;
+    padding: 10px;
+    border-radius: 18px;
+    transition: background-color 0.2s;
+}
+
+#projects-container .project a:hover {
+    background-color: #c99d1d;
+    transition: background-color 0.2s;
 }
