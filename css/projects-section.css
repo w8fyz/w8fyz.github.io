@@ -1,0 +1,23 @@
+#projects .section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+#projects .section-title h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+#projects .section-title h2 {
+    margin: 0;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+#projects .section-title h2:hover {
+    opacity: 1;
+    transition: opacity 0.2s;
+}
