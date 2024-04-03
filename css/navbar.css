@@ -1,6 +1,6 @@
 #nav-bar {
     margin-left: 30px;
-    top: 40vh;
+    top: 28vh;
     border-radius: 30px;
     position: fixed;
     background-color: #f5f6fa;
@@ -48,13 +48,19 @@
     }
     #nav-bar {
         margin-left: 10px;
-        top: 60vh;
+        top: 40vh;
     }
 }
 
 @media screen and (max-height: 840px) {
     #nav-bar {
-        top: 50vh !important;
+        top: 30vh !important;
+    }
+}
+
+@media screen and (max-height: 660px) {
+    #nav-bar {
+        top: 5vh !important;
     }
 }
 

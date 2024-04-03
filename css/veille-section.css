@@ -1,0 +1,75 @@
+#veille .section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #f5f6fa;
+}
+
+#veille .section-title h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+#veille .section-title h2 {
+    margin: 0;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+#veille .section-title h2:hover {
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+#veille #veille-container {
+    margin-top:30px;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+#veille .veille-impl {
+    cursor: pointer;
+    margin: 20px;
+    padding: 25px;
+    background-color: #2A2F38;
+    width: 350px;
+    height: fit-content;
+    border-radius: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+}
+
+#veille .veille-impl a {
+    margin-top: 20px;
+    text-decoration: none;
+    color: #f5f6fa;
+    font-size: 24px;
+}
+
+#veille .veille-impl p {
+    text-decoration: none;
+    color: #f5f6fa;
+    font-size: 14px;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+#veille .veille-impl p:hover {
+    opacity: 1;
+    transition: opacity 0.3s;
+}
+
+#veille .veille-impl:hover {
+    -webkit-box-shadow: 0px 0px 5px 6px rgba(0,0,0,0.8);
+    box-shadow: 0px 0px 10px 8px rgba(0,0,0,0.15);
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+#veille .veille-impl img {
+    width: 350px;
+    border-radius: 23px;
+}

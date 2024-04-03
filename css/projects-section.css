@@ -9,7 +9,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: white;
+    color: #f5f6fa;
 }
 
 #projects .section-title h1 {
@@ -44,6 +44,8 @@
     height: 500px;
     border-radius: 20px;
     transition: box-shadow 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
 }
 
 #projects-container .project:hover {
@@ -63,20 +65,36 @@
 }
 
 #projects-container .project p {
-    color: white;
+    color: #f5f6fa;
     font-size: 20px;
     opacity: 0.7;
 }
 
 #projects-container .project a {
+    margin-top:auto;
+    width: fit-content;
     text-decoration: none;
-    color: white;
+    color: #f5f6fa;
     font-size: 24px;
     font-weight: 700;
     background-color: #E1B12C;
     padding: 10px;
     border-radius: 18px;
     transition: background-color 0.2s;
+}
+
+#projects-container .project .tags span.primary {
+    font-weight: 600;
+    background-color: #deb235;
+}
+
+#projects-container .project .tags span {
+    font-weight: 500;
+    color:#f5f6fa;
+    background-color: #a27806;
+    padding: 5px;
+    border-radius: 8px;
+    margin: 1px;
 }
 
 #projects-container .project a:hover {

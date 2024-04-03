@@ -3,7 +3,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    color: white;
+    color: #f5f6fa;
 }
 
 #about-me .section-title h1 {
@@ -53,7 +53,7 @@
 #about-me-content p {
     text-align: justify;
     font-size: 2vw;
-    color: white;
+    color: #f5f6fa;
 }
 
 @media screen and (max-width: 950px) {
