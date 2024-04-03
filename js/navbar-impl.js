@@ -3,27 +3,27 @@ function getNavbar() {
         '    <div id="nav-bar">\n' +
         '        <div id="nav-overlay"></div>\n' +
         '        <ul>\n' +
-        '            <a href="#main" data-name="Accueil">\n' +
+        '            <a href="/#main" data-name="Accueil">\n' +
         '                <li> <i class="bi bi-house"></i></li>\n' +
         '            </a>\n' +
         '\n' +
-        '            <a href="#about-me" data-name="A propos de moi">\n' +
+        '            <a href="/#about-me" data-name="A propos de moi">\n' +
         '                <li><i class="bi bi-file-earmark-text"></i> </li>\n' +
         '            </a>\n' +
         '\n' +
-        '            <a href="#projects" data-name="Mes Projets">\n' +
+        '            <a href="/#projects" data-name="Mes Projets">\n' +
         '            <li>\n' +
         '                <i class="bi bi-palette"></i>\n' +
         '            </li>\n' +
         '            </a>\n' +
         '\n' +
-        '            <a href="#veille" data-name="Veille Numérique">\n' +
+        '            <a href="/#veille" data-name="Veille Informatique">\n' +
         '                <li>\n' +
         '                    <i class="bi bi-book"></i></i>\n' +
         '                </li>\n' +
         '            </a>\n' +
         '\n' +
-        '            <a href="#contact" data-name="Me contacter">\n' +
+        '            <a href="/#contact" data-name="Me contacter">\n' +
         '                <li>\n' +
         '                    <i class="bi bi-send"></i></i>\n' +
         '                </li>\n' +

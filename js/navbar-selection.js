@@ -80,7 +80,7 @@ function updateNavBar(section) {
     let navbar_links = document.querySelectorAll("#nav-bar ul a");
     let toUpdateNav = null;
     navbar_links.forEach((nav) => {
-        if(nav.getAttribute("href").slice(1) === section.id) {
+        if(nav.getAttribute("href").slice(2) === section.id) {
             toUpdateNav = nav;
         }
     });

@@ -1,3 +1,118 @@
+section {
+    padding: 0;
+    margin: 0;
+    height: fit-content !important;
+}
+
 .section-title {
-    margin-top: 5vh;
+    margin-top: 3vh;
+}
+
+#project-impl-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2vh;
+}
+
+#project-impl-container .project-body {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    border-radius: 30px;
+    background-color: #2A2F38;
+    width: 80vw;
+    padding: 30px 15px;
+    justify-content: space-between;
+}
+
+#project-impl-container .centered-project {
+    justify-content: center;
+    flex-wrap: wrap-reverse;
+    height: fit-content;
+    display: flex;
+    align-items: center;
+
+}
+
+#project-impl-container .centered-project p a {
+    text-decoration: underline;
+    color: #deb235;
+    transition: color 0.2s;
+}
+
+#project-impl-container .centered-project p a:hover {
+    color: #f1c342;
+    transition: color 0.2s;
+}
+
+
+#project-impl-container .centered-project img {
+    border-radius: 25px;
+    height: auto;
+    width: 500px;
+}
+
+
+.project-body .tags {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.project-body .tags span.primary {
+    font-weight: 600;
+    background-color: #deb235;
+}
+
+.project-body .tags span {
+    font-weight: 500;
+    color:#f5f6fa;
+    background-color: #a27806;
+    padding: 5px 10px;
+    border-radius: 8px;
+    font-size: 2.5vh;
+}
+
+
+
+#project-impl-container .centered-project p {
+    font-size: 3vh;
+    color: white;
+    text-align: justify;
+    height: auto;
+    width: 40vw;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 1349px) {
+    #project-impl-container .centered-project p {
+        width: 100%;
+    }
+    #project-impl-container .centered-project img {
+        width: 60%;
+    }
+    #project-impl-container {
+        justify-content: flex-start;
+    }
+    #project-impl-container .project-body {
+        padding: 30px 30px;
+    }
+    #project-impl-container {
+        margin-top: 2vh;
+    }
+}
+
+@media screen and (max-width: 474px) {
+    #project-impl-container .centered-project p {
+        width: 100%;
+        font-size: 24px;
+    }
+    #project-impl-container {
+        margin-top: 5vh;
+    }
+    .section-title h1 {
+        font-size: 8vw;
+    }
 }
