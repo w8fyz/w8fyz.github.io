@@ -58,6 +58,11 @@
     transition: opacity 0.3s;
 }
 
+#veille .veille-impl .veille-meta {
+    display: flex;
+    justify-content: space-between;
+}
+
 #veille .veille-impl p:hover {
     opacity: 1;
     transition: opacity 0.3s;

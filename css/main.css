@@ -19,6 +19,7 @@ body::-webkit-scrollbar {
     width: var(--sb-size);
 }
 
+
 body::-webkit-scrollbar-track {
     background: var(--sb-track-color);
     border-radius: 3px;
@@ -49,3 +50,35 @@ section {
     height: 100vh;
 }
 
+.section-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #f5f6fa;
+}
+
+.section-title h1 {
+    font-size: 32px;
+    text-transform: uppercase;
+}
+
+.section-title h2 {
+    margin: 0;
+    opacity: 0.7;
+    transition: opacity 0.2s;
+}
+
+.section-title h2:hover {
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+.section-title .section-sub-title {
+    margin-top: 5vh;
+    width: 40vw;
+    text-align: center;
+    background-color: #2A2F38;
+    padding: 20px;
+    border-radius: 20px;
+}
