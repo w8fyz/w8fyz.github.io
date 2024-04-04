@@ -28,7 +28,7 @@ class Project {
 function getCleanTags(tag_list) {
     let html_tags = "";
 
-    this.tags.forEach((tag) => {
+    tag_list.forEach((tag) => {
         if(html_tags.length === 0) {
             html_tags+='<span class="primary">'+tag+'</span>'
         } else {
