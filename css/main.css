@@ -64,6 +64,7 @@ section {
 }
 
 .section-title h2 {
+
     text-align: center;
     margin: 0;
     opacity: 0.7;
@@ -75,10 +76,23 @@ section {
     transition: opacity 0.2s;
 }
 
-.section-title .section-sub-title {
+.section-sub-title h2 .bold {
+    font-weight: 500;
+    font-size: 20px;
+    color: #E1B12C;
+}
+
+.section-sub-title h2 {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.section-sub-title {
+    align-self: center;
+    color: white;
     margin-top: 5vh;
-    width: 40vw;
-    text-align: center;
+    width: 70vw;
+    text-align: justify;
     background-color: #2A2F38;
     padding: 20px;
     border-radius: 20px;
